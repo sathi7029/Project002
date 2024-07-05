@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.heading {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e3c72; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2a5298,
+    #1e3c72
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2a5298,
+    #1e3c72
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+  font-weight: bold;
+}
+
+.mainImg {
+  height: 300px;
+}
+.middle {
+  height: 450px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.para {
+  width: 60vw;
+  text-align: justify;
+  color: white;
+  font-weight: bold;
+}
+
+.ache {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.para-ach {
+  text-align: justify;
+  width: 70vw;
+}
+
+.imgss {
+  width: 300px;
+  height: 250px;
+}
+.personalLife {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 20px;
+}
+
+.foot {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a5298;
+  color: white;
+  font-weight: bold;
+}
+
+/*Tab Responsive*/
+
+@media screen and (max-width: 768px) {
+  .mainImg {
+    height: 180px;
+  }
+
+  .middle {
+    height: 320px;
+  }
+  .para {
+    width: 40vw;
+    text-align: justify;
+  }
+
+  .ache {
+    height: 320px;
+  }
+
+  .achhead {
+    margin-bottom: 10px;
+  }
+  .personalLife {
+    height: 940px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*Mobile Responsiveness*/
+@media screen and (max-width: 480px) {
+  .navhead {
+    font-size: medium;
+  }
+  .para {
+    width: 60vw;
+  }
+  .middle {
+    height: 600px;
+    flex-direction: column;
+  }
+
+  .ache {
+    height: 590px;
+  }
+
+  .imgss {
+    height: 200px;
+    width: 250px;
+  }
+  .personalLife {
+    height: 1500px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .foot {
+    font-size: small;
+  }
+}
